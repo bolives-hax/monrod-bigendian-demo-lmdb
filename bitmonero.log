@@ -1,0 +1,43 @@
+2024-09-24 00:42:55.156	     3ff81ee5a00	INFO	logging	contrib/epee/src/mlog.cpp:273	New log categories: *:WARNING,net:FATAL,net.http:FATAL,net.ssl:FATAL,net.p2p:FATAL,net.cn:FATAL,daemon.rpc:FATAL,global:INFO,verify:FATAL,serialization:FATAL,daemon.rpc.payment:ERROR,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2024-09-24 00:42:55.156	     3ff81ee5a00	INFO	global	src/daemon/main.cpp:309	Monero 'Fluorine Fermi' (v0.18.3.3-unknown)
+2024-09-24 00:42:55.156	     3ff81ee5a00	INFO	global	src/daemon/protocol.h:53	Initializing cryptonote protocol...
+2024-09-24 00:42:55.156	     3ff81ee5a00	INFO	global	src/daemon/protocol.h:58	Cryptonote protocol initialized OK
+2024-09-24 00:42:55.157	     3ff81ee5a00	INFO	global	src/daemon/core.h:64	Initializing core...
+2024-09-24 00:42:55.158	     3ff81ee5a00	INFO	global	src/cryptonote_core/cryptonote_core.cpp:523	Loading blockchain from folder /tmp/monerobe/lmdb ...
+2024-09-24 00:42:55.283	     3ff81ee5a00	INFO	global	src/cryptonote_core/cryptonote_core.cpp:698	Loading checkpoints
+2024-09-24 00:42:55.283	     3ff81ee5a00	INFO	global	src/daemon/core.h:81	Core initialized OK
+2024-09-24 00:42:55.283	     3ff81ee5a00	INFO	global	src/daemon/p2p.h:64	Initializing p2p server...
+2024-09-24 00:42:55.286	     3ff81ee5a00	INFO	global	src/daemon/p2p.h:69	p2p server initialized OK
+2024-09-24 00:42:55.287	     3ff81ee5a00	INFO	global	src/daemon/rpc.h:63	Initializing core RPC server...
+2024-09-24 00:42:55.290	     3ff81ee5a00	INFO	global	contrib/epee/include/net/http_server_impl_base.h:79	Binding on 127.0.0.1 (IPv4):18081
+2024-09-24 00:42:59.154	     3ff81ee5a00	INFO	global	src/daemon/rpc.h:69	core RPC server initialized OK on port: 18081
+2024-09-24 00:42:59.164	     3ff81ee5a00	INFO	global	src/daemon/rpc.h:74	Starting core RPC server...
+2024-09-24 00:42:59.164	[SRV_MAIN]	INFO	global	src/daemon/rpc.h:79	core RPC server started ok
+2024-09-24 00:42:59.178	[SRV_MAIN]	INFO	global	src/daemon/p2p.h:79	Starting p2p net loop...
+2024-09-24 00:43:00.180	[P2P1]	INFO	global	src/cryptonote_core/cryptonote_core.cpp:1818	
+2024-09-24 00:43:00.180	[P2P1]	INFO	global	src/cryptonote_core/cryptonote_core.cpp:1818	**********************************************************************
+2024-09-24 00:43:00.180	[P2P1]	INFO	global	src/cryptonote_core/cryptonote_core.cpp:1818	The daemon is running offline and will not attempt to sync to the Monero network.
+2024-09-24 00:43:00.180	[P2P1]	INFO	global	src/cryptonote_core/cryptonote_core.cpp:1818	
+2024-09-24 00:43:00.180	[P2P1]	INFO	global	src/cryptonote_core/cryptonote_core.cpp:1818	You can set the level of process detailization through "set_log <level|categories>" command,
+2024-09-24 00:43:00.180	[P2P1]	INFO	global	src/cryptonote_core/cryptonote_core.cpp:1818	where <level> is between 0 (no details) and 4 (very verbose), or custom category based levels (eg, *:WARNING).
+2024-09-24 00:43:00.180	[P2P1]	INFO	global	src/cryptonote_core/cryptonote_core.cpp:1818	
+2024-09-24 00:43:00.180	[P2P1]	INFO	global	src/cryptonote_core/cryptonote_core.cpp:1818	Use the "help" command to see the list of available commands.
+2024-09-24 00:43:00.180	[P2P1]	INFO	global	src/cryptonote_core/cryptonote_core.cpp:1818	Use "help <command>" to see a command's documentation.
+2024-09-24 00:43:00.180	[P2P1]	INFO	global	src/cryptonote_core/cryptonote_core.cpp:1818	**********************************************************************
+2024-09-24 00:43:20.482	[SRV_MAIN]	INFO	global	src/daemon/p2p.h:81	p2p net loop stopped
+2024-09-24 00:43:20.508	     3ff2dffb8c0	INFO	stacktrace	src/common/stack_trace.cpp:133	Exception: std::system_error
+2024-09-24 00:43:20.508	     3ff2dffb8c0	INFO	stacktrace	src/common/stack_trace.cpp:134	Unwound call stack:
+2024-09-24 00:43:20.510	     3ff2dffb8c0	INFO	stacktrace	src/common/stack_trace.cpp:172	    [1]  0xbc) [0x2aa2c68ef4c]:__cxa_throw+0xbc) [0x2aa2c68ef4c]
+2024-09-24 00:43:20.510	     3ff2dffb8c0	INFO	stacktrace	src/common/stack_trace.cpp:172	    [2] /nix/store/p5q0klnh2bynm9mwdkcw6z1c3hm81kk9-monero-cli-0.18.3.3/bin/monerod(+0x10ec4a) [0x2aa2c68ec4a] 
+2024-09-24 00:43:20.510	     3ff2dffb8c0	INFO	stacktrace	src/common/stack_trace.cpp:172	    [3]  0x3e2) [0x2aa2cc17f8a]:_ZN10cryptonote3rpc9ZmqServer5serveEv+0x3e2) [0x2aa2cc17f8a]
+2024-09-24 00:43:20.510	     3ff2dffb8c0	INFO	stacktrace	src/common/stack_trace.cpp:172	    [4]  0xb754) [0x3ff80f8b754]:_thread.so.1.81.0(+0xb754) [0x3ff80f8b754]
+2024-09-24 00:43:20.510	     3ff2dffb8c0	INFO	stacktrace	src/common/stack_trace.cpp:172	    [5] /nix/store/xpxf0f9wlpqp4491y60ihif2mpg8l2iy-glibc-2.39-52/lib/libc.so.6(+0xab994) [0x3ff8082b994] 
+2024-09-24 00:43:20.510	     3ff2dffb8c0	INFO	stacktrace	src/common/stack_trace.cpp:172	    [6] /nix/store/xpxf0f9wlpqp4491y60ihif2mpg8l2iy-glibc-2.39-52/lib/libc.so.6(+0x131bb0) [0x3ff808b1bb0] 
+2024-09-24 00:43:20.510	     3ff2dffb8c0	INFO	stacktrace	src/common/stack_trace.cpp:172	
+2024-09-24 00:43:20.513	[SRV_MAIN]	INFO	global	src/daemon/rpc.h:84	Stopping core RPC server...
+2024-09-24 00:43:20.513	[SRV_MAIN]	INFO	global	src/daemon/daemon.cpp:228	Node stopped.
+2024-09-24 00:43:20.513	[SRV_MAIN]	INFO	global	src/daemon/rpc.h:96	Deinitializing core RPC server...
+2024-09-24 00:43:20.514	[SRV_MAIN]	INFO	global	src/daemon/p2p.h:91	Deinitializing p2p...
+2024-09-24 00:43:21.182	[SRV_MAIN]	INFO	global	src/daemon/core.h:102	Deinitializing core...
+2024-09-24 00:43:21.208	[SRV_MAIN]	INFO	global	src/daemon/protocol.h:75	Stopping cryptonote protocol...
+2024-09-24 00:43:21.208	[SRV_MAIN]	INFO	global	src/daemon/protocol.h:79	Cryptonote protocol stopped successfully
